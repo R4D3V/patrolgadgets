@@ -1,6 +1,6 @@
 export const TOKEN_NAME = "The Thief Gen Z";
 export const TOKEN_TICKER = "$THIEF";
-export const CONTRACT_ADDRESS = "HCeLw23AT2q8zK9Gvo8rVEY1wtHRx6dNDyaBVv6tpump";
+export const CONTRACT_ADDRESS = "4EfQMdT8nkZAGsXTh6RTRUFHLjXNF4TCWaENgdC6pump";
 export const CHAIN = "Solana";
 
 export const LINKS = {
