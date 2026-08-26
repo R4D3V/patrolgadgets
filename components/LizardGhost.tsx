@@ -200,7 +200,7 @@ export default function LizardGhost() {
         if (dx > 0.5) liz.flipX = false;
         else if (dx < -0.5) liz.flipX = true;
 
-        const el = containers[i] as HTMLElement;
+        const el = containers?.[i] as HTMLElement | undefined;
         if (el) {
           el.style.transform = `translate(${liz.x}px, ${liz.y}px) scale(${liz.scale}) scaleX(${liz.flipX ? -1 : 1})`;
           el.style.opacity = String(liz.opacity);
