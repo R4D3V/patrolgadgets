@@ -13,10 +13,13 @@ export default function Nav() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 flex justify-center px-4 pt-4">
       <nav className="flex w-full max-w-5xl items-center justify-between rounded-full border border-line bg-surface/70 px-3 py-2 backdrop-blur-md box-glow-lime">
-        <Link href="/" className="flex items-center gap-2 pl-1 font-display text-sm tracking-wider text-hi">
+        <Link
+          href="/"
+          className="flex items-center gap-2 pl-1 font-display text-sm tracking-wider text-hi"
+        >
           <AnimatedLogo size={30} />
           <span className="hidden sm:inline">
-            THE THIEF <span className="text-lime">{TOKEN_TICKER}</span>
+            THE <span className="text-lime">{TOKEN_TICKER}</span>
           </span>
         </Link>
 
