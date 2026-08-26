@@ -30,14 +30,20 @@ export default function Home() {
           <div className="relative mx-auto mt-8 h-[220px] w-[220px] animate-float sm:h-[280px] sm:w-[280px]">
             <div className="absolute inset-0 -z-10 animate-pulse-glow rounded-full bg-lime/30 blur-3xl" />
             <div className="clip-corner h-full w-full overflow-hidden rounded-2xl border-2 border-lime box-glow-lime">
-              <Image src="/img/mascot.jpg" alt="The Thief Gen Z mascot" fill className="object-cover" priority />
+              <Image
+                src="/img/mascot.jpg"
+                alt="The $TTGZ Gen Z mascot"
+                fill
+                className="object-cover"
+                priority
+              />
             </div>
           </div>
         </Reveal>
 
         <Reveal delay={0.1}>
           <h1 className="mt-8 font-display text-4xl leading-[1.05] tracking-tight text-hi sm:text-6xl md:text-7xl">
-            THE <span className="text-lime text-glow-lime">THIEF</span> IS
+            THE <span className="text-lime text-glow-lime">$TTGZ</span> IS
             <br />
             IN THE <span className="text-magenta text-glow-magenta">VAULT</span>
           </h1>
@@ -45,8 +51,10 @@ export default function Home() {
 
         <Reveal delay={0.18}>
           <p className="mx-auto mt-6 max-w-xl font-body text-base text-mid sm:text-lg">
-            A slippery little gremlin, a big Solana bag, and a plan to break into every major exchange vault on
-            the internet. Meet <span className="text-hi">{TOKEN_TICKER}</span> — the meme coin running the heist.
+            A slippery little gremlin, a big Solana bag, and a plan to break
+            into every major exchange vault on the internet. Meet{" "}
+            <span className="text-hi">{TOKEN_TICKER}</span> — the meme coin
+            running the heist.
           </p>
         </Reveal>
 
@@ -88,7 +96,12 @@ export default function Home() {
           <Reveal>
             <div className="clip-corner relative overflow-hidden rounded-2xl border border-line bg-surface/60">
               <div className="relative aspect-[4/5] w-full">
-                <Image src="/img/mascot.jpg" alt="Case file: the Thief" fill className="object-cover grayscale-0" />
+                <Image
+                  src="/img/mascot.jpg"
+                  alt="Case file: the $TTGZ"
+                  fill
+                  className="object-cover grayscale-0"
+                />
                 <div className="absolute inset-0 bg-gradient-to-t from-void via-void/10 to-transparent" />
               </div>
               <div className="absolute left-4 top-4 rounded-full border border-magenta/60 bg-void/80 px-3 py-1 font-data text-[10px] uppercase tracking-widest text-magenta">
@@ -102,7 +115,9 @@ export default function Home() {
 
           <div>
             <Reveal>
-              <p className="font-data text-xs uppercase tracking-[0.3em] text-cyan">Case File // 001</p>
+              <p className="font-data text-xs uppercase tracking-[0.3em] text-cyan">
+                Case File // 001
+              </p>
             </Reveal>
             <Reveal delay={0.06}>
               <h2 className="mt-3 font-display text-3xl text-hi sm:text-4xl">
@@ -111,10 +126,11 @@ export default function Home() {
             </Reveal>
             <Reveal delay={0.12}>
               <p className="mt-5 font-body text-mid">
-                Pulled straight out of a claymation fever dream, the Thief slid into Solana with one mission: raid
-                the vaults of the biggest exchanges on Earth and bring the loot back to the holders who believed
-                first. No VC allocation, no insider unlock, just a green gremlin and a community that moves like a
-                heist crew.
+                Pulled straight out of a claymation fever dream, the $TTGZ slid
+                into Solana with one mission: raid the vaults of the biggest
+                exchanges on Earth and bring the loot back to the holders who
+                believed first. No VC allocation, no insider unlock, just a
+                green gremlin and a community that moves like a heist crew.
               </p>
             </Reveal>
             <Reveal delay={0.18}>
@@ -132,8 +148,12 @@ export default function Home() {
       {/* TOKENOMICS */}
       <section className="mx-auto max-w-6xl px-6 py-16">
         <Reveal>
-          <p className="text-center font-data text-xs uppercase tracking-[0.3em] text-cyan">Evidence Locker</p>
-          <h2 className="mt-3 text-center font-display text-3xl text-hi sm:text-4xl">Token Intel</h2>
+          <p className="text-center font-data text-xs uppercase tracking-[0.3em] text-cyan">
+            Evidence Locker
+          </p>
+          <h2 className="mt-3 text-center font-display text-3xl text-hi sm:text-4xl">
+            Token Intel
+          </h2>
         </Reveal>
         <div className="mt-10 grid grid-cols-2 gap-4 md:grid-cols-4">
           <StatCard label="Chain" value="Solana" accent="lime" />
@@ -146,10 +166,15 @@ export default function Home() {
       {/* ROADMAP */}
       <section className="mx-auto max-w-5xl px-6 py-24">
         <Reveal>
-          <p className="text-center font-data text-xs uppercase tracking-[0.3em] text-cyan">The Plan</p>
-          <h2 className="mt-3 text-center font-display text-3xl text-hi sm:text-4xl">The Heist Roadmap</h2>
+          <p className="text-center font-data text-xs uppercase tracking-[0.3em] text-cyan">
+            The Plan
+          </p>
+          <h2 className="mt-3 text-center font-display text-3xl text-hi sm:text-4xl">
+            The Heist Roadmap
+          </h2>
           <p className="mx-auto mt-4 max-w-xl text-center font-body text-sm text-mid">
-            Four phases. One target. Every phase pulls the crew closer to the vault door.
+            Four phases. One target. Every phase pulls the crew closer to the
+            vault door.
           </p>
         </Reveal>
 
@@ -161,7 +186,7 @@ export default function Home() {
             status="complete"
             align="left"
             items={[
-              "Deploy $THIEF on Solana, lock liquidity, burn LP",
+              "Deploy $TTGZ on Solana, lock liquidity, burn LP",
               "Launch brand identity, site, and social channels",
               "Seed the first 500 holders in the crew",
             ]}
@@ -208,13 +233,31 @@ export default function Home() {
       {/* EXCHANGE TARGETS TEASER */}
       <section className="mx-auto max-w-6xl px-6 py-24">
         <Reveal>
-          <p className="text-center font-data text-xs uppercase tracking-[0.3em] text-cyan">Wanted Vaults</p>
-          <h2 className="mt-3 text-center font-display text-3xl text-hi sm:text-4xl">Exchange Targets</h2>
+          <p className="text-center font-data text-xs uppercase tracking-[0.3em] text-cyan">
+            Wanted Vaults
+          </p>
+          <h2 className="mt-3 text-center font-display text-3xl text-hi sm:text-4xl">
+            Exchange Targets
+          </h2>
         </Reveal>
         <div className="mt-10 grid gap-6 md:grid-cols-3">
-          <ExchangeTarget name="OKX" tier="Tier 1 Target" note="Global liquidity, deep order books — first vault on the list." />
-          <ExchangeTarget name="Binance" tier="Tier 1 Target" delay={0.08} note="The biggest vault of all. The end goal of the entire crew." />
-          <ExchangeTarget name="Bybit" tier="Tier 1 Target" delay={0.16} note="Derivatives depth and a fast-moving trader base." />
+          <ExchangeTarget
+            name="OKX"
+            tier="Tier 1 Target"
+            note="Global liquidity, deep order books — first vault on the list."
+          />
+          <ExchangeTarget
+            name="Binance"
+            tier="Tier 1 Target"
+            delay={0.08}
+            note="The biggest vault of all. The end goal of the entire crew."
+          />
+          <ExchangeTarget
+            name="Bybit"
+            tier="Tier 1 Target"
+            delay={0.16}
+            note="Derivatives depth and a fast-moving trader base."
+          />
         </div>
         <Reveal delay={0.2}>
           <p className="mt-8 text-center font-body text-sm text-mid">
@@ -237,7 +280,8 @@ export default function Home() {
         </Reveal>
         <Reveal delay={0.08}>
           <p className="mx-auto mt-4 max-w-md font-body text-mid">
-            Grab a bag before the vault door opens. The heist is community-run — every holder is part of the crew.
+            Grab a bag before the vault door opens. The heist is community-run —
+            every holder is part of the crew.
           </p>
         </Reveal>
         <Reveal delay={0.16}>
