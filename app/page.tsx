@@ -7,6 +7,7 @@ import CopyAddress from "@/components/CopyAddress";
 import StatCard from "@/components/StatCard";
 import RoadmapPhase from "@/components/RoadmapPhase";
 import ExchangeTarget from "@/components/ExchangeTarget";
+import LiveChart from "@/components/LiveChart";
 import { LINKS, TOKEN_TICKER } from "@/lib/constants";
 
 export default function Home() {
@@ -78,6 +79,8 @@ export default function Home() {
       </section>
 
       <Ticker />
+
+      <LiveChart />
 
       {/* CASE FILE / ABOUT TEASER */}
       <section className="mx-auto max-w-6xl px-6 py-24">
