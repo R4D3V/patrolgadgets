@@ -6,7 +6,6 @@ import AnimatedLogo from "@/components/AnimatedLogo";
 import { TOKEN_TICKER } from "@/lib/constants";
 
 const MEDIA_KIT = [
-  { label: "Social Share (1200×630)", file: "/banners/og-banner.jpg", ratio: "aspect-[1200/630]" },
   { label: "X / Twitter Header (1500×500)", file: "/banners/twitter-header.jpg", ratio: "aspect-[1500/500]" },
   { label: "Square Post (1080×1080)", file: "/banners/square-banner.jpg", ratio: "aspect-square" },
   { label: "Wide Banner (1920×1080)", file: "/banners/hero-wide-banner.jpg", ratio: "aspect-video" },

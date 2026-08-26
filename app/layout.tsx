@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import LizardGhost from "@/components/LizardGhost";
 
 const chakra = localFont({
   variable: "--font-chakra",
@@ -32,6 +33,15 @@ export const metadata: Metadata = {
   title: "The Thief Gen Z ($THIEF) — Solana Meme Coin",
   description:
     "The Thief Gen Z ($THIEF) is a Solana meme coin on a heist for the big exchange vaults — OKX, Binance, Bybit and beyond. No cap.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "48x48" },
+      { url: "/icon.png", type: "image/png", sizes: "48x48" },
+    ],
+    apple: [
+      { url: "/apple-icon.png", type: "image/png", sizes: "180x180" },
+    ],
+  },
   openGraph: {
     title: "The Thief Gen Z ($THIEF) — Solana Meme Coin",
     description: "A green gremlin, a Solana bag, and a plan to break into every major exchange vault.",
@@ -50,6 +60,7 @@ export default function RootLayout({
         <div className="bg-grid pointer-events-none fixed inset-0 z-0 opacity-40" />
         <div className="scanline-overlay pointer-events-none fixed inset-0 z-0" />
         <div className="noise-vignette pointer-events-none fixed inset-0 z-0" />
+        <LizardGhost />
         <div className="relative z-10">
           <Nav />
           <main className="pt-24">{children}</main>
